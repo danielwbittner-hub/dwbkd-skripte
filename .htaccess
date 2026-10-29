@@ -1,0 +1,10 @@
+# Skript-Downloads immer als Datei ausliefern (nicht anzeigen/ausführen)
+<IfModule mod_headers.c>
+  <FilesMatch "\.(jsx|js|zip|command)$">
+    Header set Content-Disposition "attachment"
+    Header set X-Content-Type-Options "nosniff"
+  </FilesMatch>
+</IfModule>
+<IfModule mod_mime.c>
+  AddType application/octet-stream .jsx .command
+</IfModule>
