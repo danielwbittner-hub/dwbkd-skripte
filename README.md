@@ -8,6 +8,11 @@ abnehmen.
 Dieselben Werkzeuge stehen mit ausführlichen Beschreibungen auch unter
 **<https://dwbkd.de/scripte.html>** zum Download bereit.
 
+**Installation:** In jedem Download-ZIP liegt eine Schritt-für-Schritt-Anleitung
+`INSTALLATION - bitte zuerst lesen.html` (macOS und Windows). Einfache **Skripte**
+sind schnell eingerichtet; die **Bedienfelder (Plug-ins)** für InDesign und
+Illustrator sind aufwändiger – die beiliegende Anleitung führt dort Klick für Klick.
+
 > ## ⚠️ Haftungsausschluss – bitte zuerst lesen
 >
 > Diese Werkzeuge greifen zum Teil tief in geöffnete Dokumente ein (Objekte,
