@@ -27,7 +27,7 @@ Illustrator sind aufwändiger – die beiliegende Anleitung führt dort Klick f�
 
 ## Inhalt
 
-- [Adobe InDesign](#adobe-indesign) – 3 UXP-Bedienfelder, 8 Skripte, 3 Satz-Werkzeuge
+- [Adobe InDesign](#adobe-indesign) – 3 UXP-Bedienfelder, 9 Skripte, 3 Satz-Werkzeuge
 - [Adobe Illustrator](#adobe-illustrator) – 1 CEP-Bedienfeld, 7 Werkzeuge
 - [Affinity](#affinity) – 8 Skripte für Affinity 3 (Designer)
 
@@ -60,6 +60,7 @@ Installer und Anleitung.
 | **Version sichern** | `version-sichern.jsx` | Sichert das Dokument und legt zusätzlich eine datierte Kopie im Unterordner „Versionen“ ab. Es wird nie etwas überschrieben oder gelöscht. |
 | **Neues Dokument** | `neues-dokument.jsx` | Legt ein neues Dokument aus einer Vorlage an – Visitenkarte 85 × 55 bis Plakat A1 – mit Anschnitt, Rändern und Seitenzahl. Mit Farbfeld Reichschwarz; eigene Vorlagen ergänzt man in einer Tabelle oben im Skript. |
 | **Kontaktabzug** | `kontaktabzug.jsx` | Legt alle Seiten als Miniaturen-Übersicht (A4 quer, Spaltenzahl wählbar) als PDF neben der Datei ab – praktisch für Freigaben per Mail. Das Dokument bleibt unangetastet. |
+| **Diagramme aus Excel** | `diagramme.jsx` | Erzeugt vollautomatisch Diagramme aus einer Excel- (.xlsx) oder CSV-Tabelle – Säulen, Balken, Linie, Fläche (jeweils auch gestapelt), Kreis, Ring und XY-Streudiagramm. Die Farben kommen aus den **Farbfeldern**, die Schrift aus den **Absatzformaten** des Dokuments. Eine **Live-Vorschau** im Dialog zeigt das Ergebnis schon vor dem Erzeugen und aktualisiert sich bei jeder Einstellung. Dazu viele Feineinstellungen: Zahlenformat (Nachkommastellen + Einheit wie „ €"/„ %"), manuelle Y-Achsengrenzen, Säulen-/Balkenabstand, Linienstärke, Legende unten/oben/rechts, Plot-Hintergrundfläche, Ring-Lochgröße, Kreis-/Ring-Beschriftung (Prozent/Wert/Name), Achsentitel und Sortierung der Kategorien. Alles wird als native, gruppierte Vektorobjekte gezeichnet – frei nachbearbeitbar. |
 | **Zoom-Export** | `zoom-export.jsx` | Dieselben Zoom- und Exportfunktionen wie die Bedienfelder, aber als schwebende Palette – Rückfallebene für ältere InDesign-Versionen ohne UXP. |
 
 ### Satz-Werkzeuge
