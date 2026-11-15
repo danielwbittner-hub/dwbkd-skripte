@@ -1,9 +1,9 @@
 # dwbkd · Skripte & Werkzeuge
 
 Eigene Skripte, Bedienfelder und Werkzeuge für **Adobe InDesign**, **Adobe
-Illustrator** und **Affinity** – entstanden aus der täglichen Arbeit in Satz,
-Reinzeichnung und Druckvorstufe. Kleine Helfer, die wiederkehrende Handgriffe
-abnehmen.
+Illustrator**, **Affinity** und **Adobe Acrobat** – entstanden aus der täglichen
+Arbeit in Satz, Reinzeichnung und Druckvorstufe. Kleine Helfer, die
+wiederkehrende Handgriffe abnehmen.
 
 Dieselben Werkzeuge stehen mit ausführlichen Beschreibungen auch unter
 **<https://dwbkd.de/scripte.html>** zum Download bereit.
@@ -30,6 +30,7 @@ Illustrator sind aufwändiger – die beiliegende Anleitung führt dort Klick f�
 - [Adobe InDesign](#adobe-indesign) – 3 UXP-Bedienfelder, 10 Skripte, 3 Satz-Werkzeuge
 - [Adobe Illustrator](#adobe-illustrator) – 1 CEP-Bedienfeld, 7 Werkzeuge
 - [Affinity](#affinity) – 8 Skripte für Affinity 3 (Designer)
+- [Adobe Acrobat](#adobe-acrobat) – Druckvorstufen-Plug-in (Menü „dwb“)
 
 Jedes Werkzeug lässt sich einzeln herunterladen; je Programm gibt es außerdem
 ein **Komplettpaket** (`*-komplett.zip`) mit allen Dateien und – bei InDesign –
@@ -116,6 +117,22 @@ Installer und Anleitung.
 
 ---
 
+## Adobe Acrobat
+
+> Ordner [`acrobat/`](acrobat) · gebaut für **Acrobat Pro** (getestet mit 26.002
+> auf macOS). Einmalige Einrichtung per Installer, danach steht das Menü **dwb**
+> unter *Bearbeiten* (neue Oberfläche: *☰ Menü ▸ Bearbeiten ▸ dwb*).
+
+| Werkzeug | Datei | Beschreibung |
+|---|---|---|
+| **dwb Druck-Werkzeuge** | `dwb-druck-werkzeuge.zip` | Menü-Erweiterung (Folder-Level-JavaScript) für die Druckvorstufe. **Anschnitt prüfen** (Seitenboxen in mm, fehlende TrimBox), **Farbräume anzeigen** (wirklich benutzte Farbräume, ICC-Profile mit Namen, Sonderfarben, Output-Intent, PDF/X, Schriftenliste), **Schriften in Pfade** (Acrobats Preflight „Schriften in Kurven konvertieren“, Ergebnis als Kopie), **Bildauflösung prüfen** (effektive ppi über die Transformationsmatrix), **Reinzeichnung prüfen** (Haarlinien, Farbauftrag über 300 %, Tiefschwarz/RGB-Text, Weiß auf Überdrucken, Transparenz, Kommentare/Felder/Ebenen), **Endformat & Anschnitt setzen** (TrimBox/BleedBox aus der MediaBox) und **Hintergrund einfärben** in CMYK oder echter **Sonderfarbe** (HKS/Pantone als echte `/Separation`-Platte oder CMYK-Annäherung). Ein eigener PDF-Parser liest die gespeicherte Datei selbst aus – Acrobats JavaScript kennt sonst keine Farbräume und Inhalte. |
+
+Das Werkzeug ist ein **Plug-in** – etwas aufwändiger als ein Skript. Die
+beiliegende Anleitung (`INSTALLATION - bitte zuerst lesen.html`) und der Installer
+`installieren.command` führen Schritt für Schritt; danach Acrobat neu starten.
+
+---
+
 ## Installation (Kurzüberblick)
 
 - **InDesign – Skripte (`.jsx`):** Im Skripte-Bedienfeld (*Fenster › Hilfsprogramme › Skripte*)
@@ -129,6 +146,9 @@ Installer und Anleitung.
   CEP-`extensions`-Verzeichnis legen (siehe beiliegende Anleitung).
 - **Affinity – Skripte (`.js`):** In Affinity 3 (Designer) über das Bedienfeld **Skripte**
   laden und ausführen.
+- **Acrobat – Plug-in (`.zip`):** ZIP entpacken, `installieren.command` ausführen
+  (kopiert die Datei in Acrobats `JavaScripts`-Ordner), Acrobat neu starten – Menü
+  **dwb** unter *Bearbeiten*. Siehe beiliegende Anleitung.
 
 Die Komplettpakete (`*-komplett.zip`) bündeln alle Dateien eines Programms; das
 InDesign-Paket enthält zusätzlich Installer und eine ausführliche Anleitung.
